@@ -1,0 +1,60 @@
+/*************Global***********/
+
+body {
+        background: #E5FCFF;
+    }
+
+/*************IMG***********/
+
+img { 
+    width: 25%;
+    height: 25%;
+    border-radius: 75%; 
+ }
+
+
+
+/*************Structure***********/
+
+/* https://raw.githubusercontent.com/vcd/web-2-starter/master/css/grid.css */
+
+
+
+/*************Typography***********/
+
+h1{
+    text-align: center;
+    font-family:'Roch ester', cursive;
+    font-size: 3em;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+
+/*************Naviagation***********/
+
+a {
+    text-align: center;
+    margin: 10px 0 0 0;
+    display: block;
+    height: 50px;
+    width: 100px;
+    font-size: 1em;
+    
+}
+
+li{   
+    background: aliceblue;
+    display: inline-block;
+    list-style: none; 
+    padding: 10px; 
+    border-radius: 25%;
+    
+}
+
+
+
+
