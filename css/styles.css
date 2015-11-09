@@ -39,7 +39,7 @@ body {
 a {
     text-align: center;
     margin: 10px 0 0 0;
-    display: block;
+    display: inline-block;
     height: 50px;
     width: 100px;
     font-size: 1em;
@@ -48,13 +48,19 @@ a {
 
 li{   
     background: aliceblue;
-    display: inline-block;
+    /*display: inline-block;*/
     list-style: none; 
     padding: 10px; 
     border-radius: 25%;
+    font-size:0.9em;
     
 }
 
+ul.resume {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.1em;
+}
 
 
 
