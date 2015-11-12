@@ -24,8 +24,8 @@ img {
 
 h1{
     text-align: center;
-    font-family:'Roch ester', cursive;
-    font-size: 3em;
+   font-family: 'Rochester', cursive;
+    font-size: 5em;
 }
 
 body {
@@ -46,15 +46,17 @@ a {
     
 }
 
-li{   
+li.nav{   
     background: aliceblue;
-    /*display: inline-block;*/
+    display: inline-block;
     list-style: none; 
     padding: 10px; 
     border-radius: 25%;
-    font-size:0.9em;
-    
+    font-size:0.9em; 
 }
+
+
+/*************Lists***********/
 
 ul.resume {
   text-decoration: none;
@@ -62,7 +64,28 @@ ul.resume {
   font-size: 1.1em;
 }
 
+li{   
+    background: aliceblue;
+    list-style: none; 
+    padding: 10px; 
+    border-radius: 25%;
+    font-size:0.9em;
+    
+}
 
 
 
+/* FOOTER */
 
+footer {
+     content-align: center;
+}
+
+.footer-nav {
+    font-size: .08em;
+    background: aliceblue;
+    display: inline-block;
+    list-style: none; 
+    padding: 5px; 
+    border-radius: 25%;
+}
