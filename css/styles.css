@@ -46,8 +46,10 @@ a {
     
 }
 
-li.nav{   
+nav ul li,
+h2+ul li{   
     background: aliceblue;
+    opacity: .7;
     display: inline-block;
     list-style: none; 
     padding: 10px; 
