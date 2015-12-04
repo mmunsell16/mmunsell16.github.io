@@ -4,12 +4,29 @@ body {
         background: url(../img/gplaypattern.png);
     }
 
+.main {
+  background: rgb(185, 207, 234);
+  border-radius: 3em;
+  margin: auto;
+  opacity: .7;
+  max-width: 1000px;
+  min-width: 400px;
+}
+
+
+/*
+ background: rgb(36, 17, 28) Dark purple
+
+ background: rgb(218, 178, 167); light pink
+
+background: rgb(185, 207, 234); blue*/ 
+
 /*************IMG***********/
 
 img { 
     width: 25%;
     height: 25%;
-    border-radius: 75%; 
+    border-radius: 50%; 
  }
 
 
@@ -27,6 +44,13 @@ h1{
    font-family: 'Rochester', cursive;
     font-size: 5em;
 }
+
+h2 {
+  text-align: center;
+  font-family: 'Rochester', cursive;
+  font-size: 2.2em;
+}
+
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -48,31 +72,68 @@ a {
 
 nav ul li,
 h2+ul li{   
-    background: aliceblue;
-    opacity: .7;
+    /*background: aliceblue;
+    opacity: .7;*/
     display: inline-block;
-    list-style: none; 
+    text-decoration: none; 
     padding: 10px; 
     border-radius: 25%;
     font-size:0.9em; 
 }
 
+nav {
+  margin:auto;
+  align: center;
+}
 
 /*************Lists***********/
 
-ul.resume {
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.1em;
-}
 
 li{   
-    background: aliceblue;
     list-style: none; 
     padding: 10px; 
     border-radius: 25%;
     font-size:0.9em;
-    
+    display: inline-block;
+}
+
+ul.resume li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.1em;
+  display: block;
+}
+
+ul.contact li {
+  font-size: .75em;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  margin: 1em;
+  text-decoration: none;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 40%;
+}
+
+/*************Links***********/
+
+a:hover {
+  background: ghostwhite;
+  opacity: .5;
+  border-radius: 50%;
+  
+  transition: background 1s;
+}
+
+a:active {
+  background: ;
+  color: azure;
+}
+
+a:link,
+a:visited{
+  color:black;
 }
 
 
