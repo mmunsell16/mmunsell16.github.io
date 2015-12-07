@@ -41,7 +41,6 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
   padding: .25em;
   margin: 2em auto;
   align-c': center;
-  
  }
 
 img {
@@ -112,6 +111,7 @@ h2+ul li{
 
 nav {
   margin:auto;
+  align-content: center;
 }
 
 /*************Lists***********/
@@ -161,6 +161,9 @@ a:visited{
   
   transition: all 1s;
 }
+
+
+/*************Gallery***********/
 
 
 
