@@ -32,7 +32,7 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
 
 /*************IMG***********/
 
-.img img { 
+#img img { 
   width: 15%;
   height: 15%;
   border-radius: 50%;
@@ -40,11 +40,11 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
   display: inline-block;
   padding: .25em;
   margin: 2em auto;
-  align-c': center;
+  align-content: center;
  }
 
-img {
- 
+#me {
+ border-radius: 30%;
 }
 
 
