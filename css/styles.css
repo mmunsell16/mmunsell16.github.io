@@ -50,9 +50,13 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
   max-width: 500px;
 }
 
-@media screen(max-width=900px) {
+@media screen and(max-width=500px) {
   .main {
   column-count: 1;
+  }
+  
+  ul.resume {
+    column-count: 1;
   }
 }
 
