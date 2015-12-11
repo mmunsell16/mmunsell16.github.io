@@ -101,6 +101,15 @@ p {
   font-family: 'Roboto slab', sans-serif;
   font-weight: 100;
 }
+
+blockquote {
+  font-family: 'Roboto slab', sans-serif;
+  font-weight: 800;
+    margin: 2em;
+  text-align: center;
+}
+
+
 /*************Naviagation***********/
 
 /*a {
@@ -118,26 +127,23 @@ nav {
 
 }
 
-a {
+a
+{
   font-size: 1em;
   font-family: 'Roboto slab', sans-serif;
   font-weight: 300;
   display: inline-block;
   list-style: none;
-  text-decoration: none;
-  align: center;
+  border-radius: 40%;
+  text-align: center;
   text-decoration: none;
   color: rgb(218, 178, 167);
+  margin: 0 .2  0 .2;
+  
+  
+  transition: all 2s;
 }
 
-.nav ul li,
-h2+ul li{   
-  display: inline-block;
-  padding: 10px; 
-  border-radius: 25%;
-  font-size:0.9em; 
-  align-content: center;
-}
 
 
 
@@ -163,11 +169,12 @@ li{
 
 a:hover,
 a:active {
-  color:black;
-  background: ghostwhite;
+  color:ghostwhite;
+  background: rgb(88, 56, 81);
   opacity: .9;
   
-  transition: all 1s;
+  
+  transition: all 2s;
 }
 
 
