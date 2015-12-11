@@ -51,7 +51,7 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
 }
 
 @media screen and(max-width=500px) {
-  .main {
+  .main p {
   column-count: 1;
   }
   
