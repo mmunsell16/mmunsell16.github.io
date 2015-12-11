@@ -9,8 +9,8 @@ body {
   border-radius: 3em;
   margin: auto;
   padding: 1em;
-  max-width: 1000px;
-  min-width: 400px;
+  max-width: 900px;
+  min-width: 300px;
 }
 
 .awards{
@@ -20,6 +20,7 @@ body {
   margin:1.5em;
   padding: 2em;
     }
+
 
 /*
  background: rgb(36, 17, 28) Dark purple
@@ -32,9 +33,9 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
 
 /*************IMG***********/
 
-#img img { 
-  width: 15%;
-  height: 15%;
+#img img{ 
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   border: rgb(153, 174, 199) 4px dotted;
   display: inline-block;
@@ -49,7 +50,10 @@ background: rgb(185, 207, 234); blue   153, 174, 199 */
   max-width: 500px;
 }
 
-
+@media screen(max-width=900px) {
+  .main {
+  column-count: 1;}
+}
 
 /*************Structure***********/
 
@@ -75,6 +79,7 @@ h2 {
   color: rgb(88, 56, 81);
   margin: .5em 0 1em 0;
 }
+
 
 h4 {
   font-weight: 700;
@@ -108,13 +113,19 @@ p {
 nav {
   margin:3em auto;
   text-align: center;
-  font-family: 'Roboto slab', sans-serif;
-  font-weight: 300;
-  text-decoration: none;
+
 }
 
 a {
+  font-size: 1em;
+  font-family: 'Roboto slab', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  list-style: none;
   text-decoration: none;
+  align: center;
+  text-decoration: none;
+  color: rgb(218, 178, 167);
 }
 
 .nav ul li,
@@ -133,30 +144,23 @@ h2+ul li{
 
 li{   
   list-style: none; 
-  padding: 10px; 
+  padding: .7em;
   display: inline-block;
   text-decoration: none;
 }
 
-ul.resume li {
+.resume li {
   text-decoration: none;
   display: block;
-  line-height: .5em;
 }
 
-ul.contact li {
-  font-size: 1em;
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
-  align: center;
-  border-radius: 40%;
-}
+
 
 
 /*************Links***********/
 
-a:hover {
+a:hover,
+a:active {
   color:black;
   background: ghostwhite;
   opacity: .9;
@@ -167,7 +171,6 @@ a:hover {
 
 a:link,
 a:visited{
-  color: rgb(218, 178, 167);
   
   transition: all 1s;
 }
@@ -188,7 +191,7 @@ a:visited{
   width: 640px;
   margin: 2em auto;
   padding: 5px;
-  background: rgb(218, 178, 167);
+  background: rgb(36, 17, 28);
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
@@ -203,7 +206,7 @@ a:visited{
   width: 200px;
   
   transition: .5s transform;
-  transform: translateZ(0); /* hack */
+  transform: translateX(0); /* hack */
 }
 
 .gallery > div:hover {

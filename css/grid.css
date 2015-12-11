@@ -61,6 +61,7 @@ img {
 	}
 	.grid-3 {
 		width: 23.5%;
+      
 	}
 	.grid-4 {
 		width: 32%;
@@ -85,6 +86,7 @@ img {
 	}
 	.grid-11 {
 		width: 91.5%;
+      margin-top: 2em;
 	}
 	.grid-12 {
 		width: 100%;
