@@ -244,7 +244,17 @@ a:visited{
 /* FOOTER */
 
 footer {
-     content-align: center;
+  text-align: center;
+  margin: 5em auto 0;
+  font-size: .7em;
+  background: rgb(36, 17, 28);
+  border-radius: 1em;
+  max-width: 500px;
+  min-width: 300px;
+  
+  
+  transition: none;
+  
 }
 
 
