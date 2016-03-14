@@ -1,7 +1,7 @@
 /*************Global***********/
 
 body {
-        background: url(../img/gplaypattern.png);
+        background: #000;
     }
 
 .main {
@@ -22,14 +22,7 @@ body {
     }
 
 
-/*
- background: rgb(36, 17, 28) Dark purple
-Lilac: rgb (224, 198, 223)\
-      rgb(210, 155, 213)
-
- background: rgb(218, 178, 167); light pink
-
-background: rgb(185, 207, 234); blue   153, 174, 199 */ 
+/* */ 
 
 /*************IMG***********/
 
@@ -123,10 +116,17 @@ blockquote {
     font-size: 1em;
 }*/
 
-nav {
-  margin:3em auto;
-  text-align: center;
+svg{
+  height: 150px;
+  width: 100%;
+  background: white;
+  padding: 5px;
+}
 
+nav {
+  
+  margin: 3em auto;
+  text-align: center;
 }
 
 a
@@ -239,8 +239,11 @@ a:visited{
   clear: both;
 }
 
+/**********CONTACT FORM**********/
 
-
+form {
+  margin:0 auto;
+}
 
 
 /* FOOTER */
