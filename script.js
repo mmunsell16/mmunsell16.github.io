@@ -1,41 +1,47 @@
 //PORTFOLIO
-// Create a lightbox
+jQuery(document).ready(function ($) {
 
-var $lightbox = $("<div class='lightbox'></div>");
-var $img = $("<img>");
-var $caption = $("<p class='caption'></p>");
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
 
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
 
-// Add image and caption to lightbox
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
 
-$lightbox
-	.append($img)
-	.append($caption);
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
 
-// Add lighbox to document
+    $('a.control_next').click(function () {
+        moveRight();
+    });
 
-$('body').append($lightbox);
-
-
-$('.gallery li').click(function (e) {
-	e.preventDefault();
-
-	// Get image link and description
-	var src = $(this).children('img').attr("src");
-	var cap = $(this).children('img').attr("alt");
-
-	// Add data to lighbox
-
-	$img.attr('src',src);
-	$caption.text(cap);
-
-	// $lightbox.append('<img src="' + src + '"></img><p class="caption">' + caption + '</p>');
-
-	// Show lightbox
-
-	$lightbox.fadeIn('fast');
-
-	$lightbox.click(function () {
-		$lightbox.fadeOut('fast');
-	});
-});
+});    
