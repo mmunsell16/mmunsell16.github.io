@@ -12,31 +12,33 @@ TEALS
 */
 
 body {
-        background: url(https://raw.githubusercontent.com/mmunsell16/mmunsell16.github.io/master/img/paper.png);
+        background: url(img/paper.png);
     }
 
 .main {
   background: ghostwhite;
-  border-radius: 3em;
-  margin: auto;
-  padding: 1em;
-  max-width: 900px;
-  min-width: 300px;
+  border-radius: 10%;
+  margin: 1em auto;
+  padding: .3em;
+  max-width: 60%;
+  min-width: 20%;
 }
 
+/*
 .awards{
   background: #ffcccc;
   color: rgb(224, 198, 223);
   border-radius: 2em;
-  margin:1.5em;
-  padding: 1em;
+  margin:1em;
+  padding: .1em;
     }
+*/
 
 
-/* */ 
 
 /*************IMG***********/
 
+/*
 #img img{ 
   width: 20%;
   height: 20%;
@@ -47,11 +49,11 @@ body {
   margin: 2em auto;
   align-content: center;
  }
+*/
 
 #me {
- border-radius: 2em;
-  max-height: 500px ;
-  max-width: 500px;
+ border-radius: 20%;
+  margin-top: 5em;
 }
 
 @media screen and(max-width=500px) {
@@ -70,14 +72,6 @@ body {
 
 /*************Typography***********/
 
-/* h1{
-  text-align: center;
-  font-family: 'Rochester', cursive;
-  font-size: 5em;
-  margin-top: 1em;
-  letter-spacing: 2px;
-  color: #d82767;
-} */
 
 h2 {
   text-align: center;
@@ -85,7 +79,7 @@ h2 {
   font-size: 2.2em;
   letter-spacing: 2px;
   color: #d82767;
-  margin: .5em 0 1em 0;
+  margin: .25em 0 .5em 0;
 }
 
 
@@ -96,36 +90,25 @@ h4 {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
-  color: #d82767;
+   color: #186077;
 }
 
+/*
 p {
-  color: rgb(36, 17, 28);
+  color: ;
 }
+*/
 
 .portfolio {
   font-family: 'Roboto slab', sans-serif;
   font-weight: 100;
 }
 
-/* blockquote {
-  font-family: 'Roboto slab', sans-serif;
-  font-weight: 800;
-    margin: 2em;
-  text-align: center;
-} */
+
 
 
 /*************Naviagation***********/
 
-/*a {
-    text-align: center;
-    margin: 10px 0 0 0;
-    display: inline-block;
-    height: 50px;
-    width: 100px;
-    font-size: 1em;
-}*/
 
 svg{
   height: 150px;
@@ -136,13 +119,19 @@ svg{
 }
 
 nav {
-  
   margin: 3em auto;
   text-align: center;
 }
 
-a
-{
+nav ul {
+  background: ghostwhite;
+}
+
+nav li {
+  padding: .7em;
+}
+
+a {
   font-size: 1em;
   font-family: 'Roboto slab', sans-serif;
   font-weight: 300;
@@ -167,9 +156,10 @@ a
 
 li{   
   list-style: none; 
-  padding: .7em;
+/*  padding: .7em;*/
   display: inline-block;
   text-decoration: none;
+   color: #186077;
 }
 
 .resume li {
@@ -177,6 +167,11 @@ li{
   display: block;
 }
 
+/*
+li a{
+  color: #186077;
+}
+*/
 
 ul.contact li{
   display: block;
@@ -184,17 +179,17 @@ ul.contact li{
   text-align: right
 }
 
+
+
 /*************Links***********/
 
-a:hover,
-a:active {
-  color:#186077;
+a:hover {
+  color:#d82767;
   background: ghostwhite;
   opacity: .9;
   
   transition: all 2s;
 }
-
 
 a:link,
 a:visited{
@@ -202,8 +197,11 @@ a:visited{
 }
 
 a:active, a:visited{
-  color:#d82767;
+  color: #186077 ;
 }
+
+
+/**********Contact Form************/
 
 
 
@@ -227,32 +225,26 @@ a:active, a:visited{
 
 #slider ul li {
   position: relative;
-  display: block;
+  display: inline-block;
   float: left;
-  margin: 0;
-  padding: 0;
+  padding-top: 6em;
   width: 1000px;
-  height: 1000px; 
-  align: center;
+  height: 1500px;
   line-height: 300px;
 }
 
 #slider ul li img{
-  width: 100%;
-  height: auto;
+  align: center;
 } 
 
 a.control_prev, a.control_next {
   position: absolute;
-  top: 20%;
   z-index: 999;
   display: block;
-  padding: 4% 3%;
+  padding: 2% 2%;
   background: #97d6ea;
-  color: #fff;
+  color: #d82767;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
   opacity: 0.6;
   cursor: pointer;
 }
@@ -260,6 +252,7 @@ a.control_prev, a.control_next {
 a.control_prev:hover, a.control_next:hover {
   opacity: 1;
   background: #186077;
+  color: ghostwhite;
   -webkit-transition: all 0.2s ease;
 }
 
@@ -278,4 +271,3 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
-

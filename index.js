@@ -1,4 +1,5 @@
 // PORTFOLIO SLIDESHOW
+
 jQuery(document).ready(function ($) {
 
   $('#checkbox').change(function(){
@@ -45,3 +46,7 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+
+
+
