@@ -208,6 +208,7 @@ a:active, a:visited{
 
 /*************Gallery***********/
 
+
 #slider {
   position: relative;
   overflow: hidden;
@@ -225,34 +226,38 @@ a:active, a:visited{
 
 #slider ul li {
   position: relative;
-  display: inline-block;
+  display: block;
   float: left;
-  padding-top: 6em;
+  margin: 0;
+  padding: 0;
   width: 1000px;
-  height: 1500px;
+  height: 1000px; 
+  align: center;
   line-height: 300px;
 }
 
 #slider ul li img{
-  align: center;
+  width: 100%;
+  height: auto;
 } 
 
 a.control_prev, a.control_next {
   position: absolute;
+  top: 20%;
   z-index: 999;
   display: block;
-  padding: 2% 2%;
-  background: #97d6ea;
-  color: #d82767;
+  padding: 4% 3%;
+  background: #2a2a2a;
+  color: #fff;
   text-decoration: none;
-  opacity: 0.6;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
   opacity: 1;
-  background: #186077;
-  color: ghostwhite;
   -webkit-transition: all 0.2s ease;
 }
 
@@ -271,3 +276,4 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
+  
