@@ -3,7 +3,7 @@
    $('#checkbox').change(function(){
      setInterval(function () {
          moveRight();
-     }, 3000);
+     }, 5000);
    });
   
  	var slideCount = $('#slider ul li').length;
